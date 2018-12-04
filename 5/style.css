@@ -1,0 +1,22 @@
+.outer {
+  width: 100vh;
+  height: 100vh;
+  position: relative;
+}
+
+.inner {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gray;
+}
+
+.ball {
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
