@@ -1,48 +1,18 @@
-function Node(value, next) {
-  this.value = value;
-  this.next = next;
-}
+/* Implement your solution here */
 
-function LinkedList() {
-  this.head = null;
-}
 
-LinkedList.prototype.addToHead = function(value) {
-  let node = new Node(value, this.head);
-  this.head = node;
-}
+/* Do not touch anything below this line, but make sure the example works */
+let tree = {
+  name: 'INGKA HOLDING BV',
+  subsidiaries: [
+    {name: 'IKEA FASTIGHETER AB', subsidiaries: [{name: 'IKEA InvestFast AB', subsidiaries: null}]},
+    {name: 'IKEA AB', subsidiaries: [
+      {name: 'IKEA SVENSKA AB', subsidiaries: null},
+      {name: 'IKEA IT AB', subsidiaries: null},
+      {name: 'Slutplattan EPIGA 99006 AB', subsidiaries: [{name: 'OAO DOMOSTROITEL', subsidiaries: null}]}
+    ]},
+    {name: 'IKEA of Sweden AB', subsidiaries: [{name: 'IKEA Communications AB', subsidiaries: null}]}
+  ]
+};
 
-/* Do NOT touch anything above this line */
-
-/* Implement a solution with a loop here */
-LinkedList.prototype.loop = function(f) {
-  let node = this.head;
-  while(node) {
-    f(node.value);
-    if (node.next) node = node.next;
-    else node = null;
-  }
-}
-
-/* Implement a recursive function solution here */
-function loop(node, f) {
-  f(node.value);
-  if (node.next) loop(node.next, f);
-}
-
-/* Do NOT touch anything below this line */
-
-let list = new LinkedList();
-list.addToHead(5);
-list.addToHead(3);
-list.addToHead(2);
-list.addToHead(1);
-
-function logFunction(value) {
-  console.log(value * 2);
-}
-
-loop(list.head, logFunction);
-
-list.loop(logFunction);
-
+if (countCompanies(tree) !== 10) console.error('Invalid amount');
