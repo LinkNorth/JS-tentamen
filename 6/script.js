@@ -16,3 +16,4 @@ let tree = {
 };
 
 if (countCompanies(tree) !== 10) console.error('Invalid amount');
+else console.log('Solved!');

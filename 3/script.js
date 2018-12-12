@@ -1,4 +1,4 @@
-
+/* Implement your solution here */
 
 /* Do not touch anything below this line */
 let data = [

@@ -1,4 +1,4 @@
-
+/* Implement your solution here */
 
 /* Do NOT touch this function */
 function getData() {
