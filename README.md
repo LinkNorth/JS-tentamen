@@ -2,7 +2,7 @@
 
 I denna mappen ligger det sex stycken mappar. Varje mapp innehåller en uppgift. Det finns alltid en `script.js` fil i varje mapp. Det är där du ska skriva din lösning. Ibland finns det också en html fil och en css fil. I de fallen så är uppgiften DOM-relaterad. Du ska aldrig ändra i CSS eller HTML filerna.
 
-Varje mapp har också en `TODO.md` fil. I dessa filerna står det vad uppgiften går ut på. Notera att i vissa `script.js` filer ligger det kommentarer om vad du får och inte får lov att ändra. 
+Varje mapp har också en `README.md` fil. I dessa filerna står det vad uppgiften går ut på. Notera att i vissa `script.js` filer ligger det kommentarer om vad du får och inte får lov att ändra. 
 
 
 För att bli godkänd behöver du klara alla G-uppgifterna (1-4).     
